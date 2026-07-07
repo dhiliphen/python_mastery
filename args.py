@@ -48,3 +48,18 @@ def count_even(*args):
     return number_of_items
     
 print(count_even(4,8,6))
+
+# join multiple words 
+def join_words(*args):
+    result =""
+    count = 0
+    
+    for _ in args:
+        result = result + _
+        count += 1
+        if (count < len(args) ):
+            result = result + " "
+
+    return result
+    
+print(join_words("Alpha", "is" ,"a", "noir", "film"))
