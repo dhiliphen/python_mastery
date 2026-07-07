@@ -22,4 +22,18 @@ def largest(*args):
     
 print(largest(7,31,4))
 
+#get the avarage of the argumnets
+def average(*args):
+    total = 0
+    number_of_items = 0
+    
+    for _ in args:
+         total = total + _
+         number_of_items += 1
+         
+         
+    return total/number_of_items
+    
+print(average(4,5,6))
+
 
