@@ -61,5 +61,22 @@ def join_words(*args):
             result = result + " "
 
     return result
+
+
+# get the longest word
+def longest_word(*args):
+    answer_word = ""
+    long_letter_count = 1
+    
+    for _ in args:
+        if long_letter_count < len(_) :
+            answer_word = _
+            long_letter_count = len(_)
+        
+    print(f"the longest word is ",answer_word)
+        
+        
+longest_word("ace","lace","watermelons",)      
+
     
 print(join_words("Alpha", "is" ,"a", "noir", "film"))
